@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+
+     .grid-container{
+   display: grid;
+   grid-template-columns: 20% auto 20%;
+   grid-template-rows: 20% auto 5%;
+
+}
+    nav {
+     
+      border: 1px solid black;
+     
+       height: 600px;
+
+    
+
+     
+    }
+
+    header {
+      border: 1px solid black;
+
+
+      grid-column-start: 1;
+
+      grid-column-end: 4;
+  
+      
+    }
+
+    main {
+      border: 1px solid black;
+      
+     
+      
+  
+    }
+
+    aside {
+      border: 1px solid black;
+      
+
+
+      
+   
+    }
+
+    footer {
+      border: 1px solid black;
+
+      grid-column: 1/4;
+
+    }
+    @media (max-width:800px){
+    .grid-container > *{ grid-column: 1/4}
+   
+    
+   
+    }
+
+
+
+   
+  </style>
+</head>
+
+<body>
+ 
+  <div class="grid-container">
+    <header>header</header>
+      <nav>nav</nav>
+
+      <main>magin</main>
+
+      <aside>Aside</aside>
+
+
+  <footer>footer</footer>
+  </div>
+</body>
+
+</html>
